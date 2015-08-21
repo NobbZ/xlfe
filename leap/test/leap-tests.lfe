@@ -6,13 +6,13 @@
 (include-lib "ltest/include/ltest-macros.lfe")
 
 (deftest leap-year
-  (is (leap:leap-year 1996)))
+  (is (leap:leap-year? 1996)))
 
 (deftest non-leap-year
-  (is-not (leap:leap-year 1997)))
+  (is-not (leap:leap-year? 1997)))
 
 (deftest century
-  (is-not (leap:leap-year 1900)))
+  (is-not (leap:leap-year? 1900)))
 
 (deftest fourth-century
-  (is (leap:leap-year 2400)))
+  (is (leap:leap-year? 2400)))
